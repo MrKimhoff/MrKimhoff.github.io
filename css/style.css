@@ -26,6 +26,13 @@ section {
   margin: auto;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
 .project-card {
   background: white;
   padding: 15px;
@@ -45,10 +52,10 @@ section {
   border-radius: 4px;
 }
 
-.project-image img{
-  width: 300px /* uniform width for all images */;
-  height: auto; /* maintain aspect ratio */
-  object-fit: cover; /* ensures images cover the area without distortion */
-  border-radius: 8px; /* rounded corners for images */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* subtle shadow for depth */
+.project-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
