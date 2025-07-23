@@ -33,3 +33,24 @@ section {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+
+
+.project-image {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;  /* Ensures images wrap in smaller screens */
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.project-image img{
+  width: 300px /* uniform width for all images */;
+  height: auto; /* maintain aspect ratio */
+  object-fit: cover; /* ensures images cover the area without distortion */
+  border-radius: 8px; /* rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* subtle shadow for depth */
+}
