@@ -66,7 +66,7 @@ section {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3,1fr);
   gap: 10px;
   margin-top: 10px;
 }
@@ -79,6 +79,12 @@ section {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   flex: 1 1 300px;
   min-width: 0; /* Prevents overflow */
+}
+
+.project-card a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+  display: block; /* Makes the entire card clickable */
 }
 
 .project-image {
